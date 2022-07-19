@@ -9,6 +9,11 @@ import HookMouse from './components/HookMouse';
 import MouseContainer from './components/MouseContainer';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
+import React from 'react';
+import ComponentA from './components/context-oldway/ComponentC';
+
+export const UserContext = React.createContext();
+export const CourceContext = React.createContext();
 
 function App() {
   return (
@@ -21,7 +26,13 @@ function App() {
       {/* <HookMouse/> */}
       {/* <MouseContainer/> */}
       {/* <IntervalHookCounter/> */}
-      <DataFetching/>
+      {/* <DataFetching/> */}
+
+      <UserContext.Provider value={'Govind'}>
+        <CourceContext.Provider value={'ReactJSCourse'}>
+          <ComponentA/>
+        </CourceContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
