@@ -11,6 +11,7 @@ import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
 import React from 'react';
 import ComponentA from './components/context/ConsumerCOld';
+import CounterOne from './components/reducer/CounterOne';
 
 export const UserContext = React.createContext();
 export const CourseContext = React.createContext();
@@ -28,11 +29,12 @@ function App() {
       {/* <IntervalHookCounter/> */}
       {/* <DataFetching/> */}
 
-      <UserContext.Provider value={'Govind'}>
+      {/* <UserContext.Provider value={'Govind'}>
         <CourseContext.Provider value={'ReactJSCourse'}>
           <ComponentA/>
         </CourseContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+      <CounterOne/>
     </div>
   );
 }
