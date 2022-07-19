@@ -13,6 +13,7 @@ import React from 'react';
 import ComponentA from './components/context/ConsumerCOld';
 import CounterOne from './components/reducer/CounterOne';
 import CounterTwo from './components/reducer/CounterTwo';
+import CounterThree from './components/reducer/CounterThree';
 
 export const UserContext = React.createContext();
 export const CourseContext = React.createContext();
@@ -36,7 +37,8 @@ function App() {
         </CourseContext.Provider>
       </UserContext.Provider> */}
       {/* <CounterOne/> */}
-      <CounterTwo />
+      {/* <CounterTwo /> */}
+      <CounterThree />
     </div>
   );
 }
