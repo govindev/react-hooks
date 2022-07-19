@@ -12,6 +12,7 @@ import DataFetching from './components/DataFetching';
 import React from 'react';
 import ComponentA from './components/context/ConsumerCOld';
 import CounterOne from './components/reducer/CounterOne';
+import CounterTwo from './components/reducer/CounterTwo';
 
 export const UserContext = React.createContext();
 export const CourseContext = React.createContext();
@@ -34,7 +35,8 @@ function App() {
           <ComponentA/>
         </CourseContext.Provider>
       </UserContext.Provider> */}
-      <CounterOne/>
+      {/* <CounterOne/> */}
+      <CounterTwo />
     </div>
   );
 }
