@@ -15,6 +15,7 @@ import CounterOne from './components/reducer/CounterOne';
 import CounterTwo from './components/reducer/CounterTwo';
 import CounterThree from './components/reducer/CounterThree';
 import Counter from './components/context-reducer/Counter';
+import DataFetchingOne from './components/reducer/DataFetchingOne';
 
 export const UserContext = React.createContext();
 export const CourseContext = React.createContext();
@@ -40,7 +41,8 @@ function App() {
       {/* <CounterOne/> */}
       {/* <CounterTwo /> */}
       {/* <CounterThree /> */}
-      <Counter/>
+      {/* <Counter/> */}
+      <DataFetchingOne />
     </div>
   );
 }
