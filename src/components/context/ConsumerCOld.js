@@ -1,5 +1,5 @@
 import React from "react";
-import { CourceContext, UserContext } from "../../App";
+import { CourseContext, UserContext } from "../../App";
 
 function ComponentC() {
   return (
@@ -7,15 +7,15 @@ function ComponentC() {
       <UserContext.Consumer>
         {(user) => {
           return (
-            <CourceContext.Consumer>
-              {(cource) => {
+            <CourseContext.Consumer>
+              {(course) => {
                 return (
                   <div>
-                    User Context value {user} course context value is {cource}
+                    User Context value {user} course context value is {course}
                   </div>
                 );
               }}
-            </CourceContext.Consumer>
+            </CourseContext.Consumer>
           );
         }}
       </UserContext.Consumer>

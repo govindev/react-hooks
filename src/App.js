@@ -10,10 +10,10 @@ import MouseContainer from './components/MouseContainer';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
 import React from 'react';
-import ComponentA from './components/context-oldway/ComponentC';
+import ComponentA from './components/context/ConsumerCOld';
 
 export const UserContext = React.createContext();
-export const CourceContext = React.createContext();
+export const CourseContext = React.createContext();
 
 function App() {
   return (
@@ -29,9 +29,9 @@ function App() {
       {/* <DataFetching/> */}
 
       <UserContext.Provider value={'Govind'}>
-        <CourceContext.Provider value={'ReactJSCourse'}>
+        <CourseContext.Provider value={'ReactJSCourse'}>
           <ComponentA/>
-        </CourceContext.Provider>
+        </CourseContext.Provider>
       </UserContext.Provider>
     </div>
   );
