@@ -14,6 +14,7 @@ import ComponentA from './components/context/ConsumerCOld';
 import CounterOne from './components/reducer/CounterOne';
 import CounterTwo from './components/reducer/CounterTwo';
 import CounterThree from './components/reducer/CounterThree';
+import Counter from './components/context-reducer/Counter';
 
 export const UserContext = React.createContext();
 export const CourseContext = React.createContext();
@@ -38,7 +39,8 @@ function App() {
       </UserContext.Provider> */}
       {/* <CounterOne/> */}
       {/* <CounterTwo /> */}
-      <CounterThree />
+      {/* <CounterThree /> */}
+      <Counter/>
     </div>
   );
 }
