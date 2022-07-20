@@ -19,6 +19,7 @@ import DataFetchingOne from './components/reducer/DataFetchingOne';
 import DataFetchingTwo from './components/reducer/DataFetchingTwo';
 import ParentComponent from './components/callback/ParentComponent';
 import CounterMemo from './components/memo/CounterMemo';
+import FocusInput from './components/ref/FocusInput';
 
 export const UserContext = React.createContext();
 export const CourseContext = React.createContext();
@@ -48,7 +49,8 @@ function App() {
       {/* <DataFetchingOne /> */}
       {/* <DataFetchingTwo /> */}
       {/* <ParentComponent/> */}
-      <CounterMemo />
+      {/* <CounterMemo /> */}
+      <FocusInput/>
     </div>
   );
 }
