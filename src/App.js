@@ -18,6 +18,7 @@ import Counter from './components/context-reducer/Counter';
 import DataFetchingOne from './components/reducer/DataFetchingOne';
 import DataFetchingTwo from './components/reducer/DataFetchingTwo';
 import ParentComponent from './components/callback/ParentComponent';
+import CounterMemo from './components/memo/CounterMemo';
 
 export const UserContext = React.createContext();
 export const CourseContext = React.createContext();
@@ -46,7 +47,8 @@ function App() {
       {/* <Counter/> */}
       {/* <DataFetchingOne /> */}
       {/* <DataFetchingTwo /> */}
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
+      <CounterMemo />
     </div>
   );
 }
