@@ -20,6 +20,7 @@ import DataFetchingTwo from './components/reducer/DataFetchingTwo';
 import ParentComponent from './components/callback/ParentComponent';
 import CounterMemo from './components/memo/CounterMemo';
 import FocusInput from './components/ref/FocusInput';
+import HookTimer from './components/ref/HookTimer';
 
 export const UserContext = React.createContext();
 export const CourseContext = React.createContext();
@@ -50,7 +51,8 @@ function App() {
       {/* <DataFetchingTwo /> */}
       {/* <ParentComponent/> */}
       {/* <CounterMemo /> */}
-      <FocusInput/>
+      {/* <FocusInput/> */}
+      <HookTimer/>
     </div>
   );
 }
